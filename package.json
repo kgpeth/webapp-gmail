@@ -14,7 +14,7 @@
     "build": "webpack",
     "upload": "clasp push",
     "redeploy": "clasp deploy -i AKfycbyWX0vI0DTEe0hQ19y28fvMjukVLaJjROu-qESgjJuRujsvq6sE",
-    "deploy": "npm run build && npm run upload",
+    "deploy": "npm run build && npm run upload && npm run redeploy",
     "deploy:prod": "cross-env NODE_ENV=production npm run deploy"
   },
   "repository": {
@@ -42,7 +42,6 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.1",
     "cross-env": "^7.0.2",
-    "eslint": "^7.1.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^4.0.2",
